@@ -31,15 +31,13 @@ class Student(Person):
             total = sum(self.grades)
             num_of_grades = len(self.grades)
             average = total / num_of_grades
-            print(average)
+            return average
         else:
-            print(0)
+            return 0
     
     def get_student_summary(self):
-        print("Student ID:", self.student_id, "¦", "Course:", self.course,"¦", "Grades:", self.grades)
+        print("Student ID:", self.student_id, "¦", "Course:", self.course,"¦", "Grades:", self.calcuate_avg_grade())
     
-            
-
 #Kryssi = Person("Krysia", 16, "Male")
 #Kryssi.set_details("Krysiah", 17, "Female")
 #Kryssi.get_details()
